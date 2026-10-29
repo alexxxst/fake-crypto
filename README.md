@@ -19,7 +19,7 @@ PHP SDK для работы с платежным API FakeCrypto: приём п�
 Подключите репозиторий в `composer.json` вашего проекта:
 
 ```bash
-composer config repositories.fake-crypto vcs https://github.com/alexxxst/fake-crypto.git
+composer config repositories.fake-crypto git https://github.com/alexxxst/fake-crypto.git
 ```
 
 Затем установите пакет:
@@ -28,7 +28,7 @@ composer config repositories.fake-crypto vcs https://github.com/alexxxst/fake-cr
 composer require vdsina/fake-crypto:@dev
 ```
 
-Если репозиторий приватный, Composer должен иметь к нему доступ: используйте SSH-ключ или GitHub-токен. Если адрес репозитория отличается от указанного выше, замените его в команде `composer config`.
+Репозиторий приватный, поэтому Composer должен иметь к нему доступ. При установке по HTTPS используется Git credential helper (например, настроенный через `gh auth login`). Если нужен SSH, замените URL на `git@github.com:alexxxst/fake-crypto.git` и убедитесь, что ключ GitHub добавлен в `~/.ssh/known_hosts`.
 
 Для установки конкретной ветки или тега укажите версию явно:
 
