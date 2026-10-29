@@ -1,0 +1,32 @@
+{
+  "name": "vdsina/fake-crypto",
+  "description": "PHP SDK for the FakeCrypto payments API",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/alexxxst/fake-crypto",
+  "support": {
+    "issues": "https://github.com/alexxxst/fake-crypto/issues",
+    "source": "https://github.com/alexxxst/fake-crypto"
+  },
+  "keywords": [
+    "fakecrypto",
+    "payments",
+    "payouts",
+    "sdk"
+  ],
+  "require": {
+    "php": ">=8.3",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "FakeCrypto\\Api\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
